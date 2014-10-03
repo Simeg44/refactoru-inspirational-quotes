@@ -5,29 +5,52 @@
   <title>Untitled</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
-		<form class="quote-input">
-			<div>
-				<label for="quote">Quote</label>
-				<textarea name="quote" id="quote-text" cols="30" rows="6"></textarea>
-			</div>
-			<div>
-				<label for="author">Author</label>
-				<input type="text">
-			</div>
-			<div>
-				<button>Submit</button>
-			</div>
-		</form>
+		<div class="grayout">
+			<form class="quote-input">
+				<div>
+					<i class="fa fa-times-circle fa-2x x-btn"></i>
+				</div>
+				<div>
+					<label for="quote">Quote</label>
+					<textarea name="quote" id="text" cols="30" rows="6"></textarea>
+				</div>
+				<div>
+					<label for="author">Author</label>
+					<input id="author" type="text">
+				</div>
+				<div>
+					<input class="submit" type="submit">
+				</div>
+			</form>
+		</div>
+		
+
 		<div class="add-quote">
 			<img src="http://vectormadness.com/preview/design/large/brown_book_leather_and_swirl_background_vector_design_1289879997.jpg" alt=""><br>
 			<button>Add Quote</button>
 		</div>
-	
-
+		<div class="current-quotes">
+			<h3>Quote Database</h3>
+			<i class="fa fa-undo undo-btn"></i>
+			<hr>
+			
+		</div>
+		<div class="ratings" id="temp">
+			<ul>
+				<li class="star" id="1"><i class="fa fa-star-o"></i></li>
+				<li class="star" id="2"><i class="fa fa-star-o"></i></li>
+				<li class="star" id="3"><i class="fa fa-star-o"></i></li>
+				<li class="star" id="4"><i class="fa fa-star-o"></i></li>
+				<li class="star" id="5"><i class="fa fa-star-o"></i></li>
+			</ul>
+			<div class="average no-rating">No Ratings</div>
+		</div>
 	</div>
+	div.double
 	
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="main.js"></script>
